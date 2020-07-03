@@ -1,0 +1,134 @@
+name: covid_invasion
+description: Covid Invasion Game project, kill virus to save the earth from the CoronaVirus Invasion
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+3
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+    #For localization
+  flutter_localizations:
+    sdk: flutter
+  
+  
+
+    #For game
+  flame: ^0.22.0
+
+  # For storage game settings, player result
+  shared_preferences: ^0.5.7+3
+    # for in game advertisement
+  # admob_flutter: ^0.3.4
+  admob_flutter: ^1.0.0-beta.4
+  #support covid update
+  provider: ^4.1.3
+  http: ^0.12.1
+  intl: ^0.16.1  # For datetime format, #Link : https://pub.dev/packages/intl
+
+  #check wifi is available
+  connectivity: '>=0.4.8+6 <2.0.0'
+
+  simple_animations: ^2.2.1
+  supercharged: ^1.6.0     # supercharged used with simple_animations for convenience
+
+  url_launcher: ^5.4.10
+
+  # animated_text_kit: ^2.2.0
+  package_info: '>=0.4.1 <2.0.0'
+
+  flare_flutter: ^2.0.3
+  flutter_svg: ^0.17.4
+
+  charts_flutter: ^0.9.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  #For app icon generate
+  flutter_launcher_icons: ^0.7.5
+# app icon link to file, run 
+flutter_icons:
+    android: true
+    ios: true
+    image_path: 'dev-assets/app-icon.png'  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/lang/
+    - assets/animation/
+    - assets/icons/
+    - assets/images/
+    - assets/images/bg/
+    - assets/images/virus/
+    - assets/images/sanitizer/
+        
+    - assets/images/bg/virus-background.jpg
+    - assets/images/bg/galaxy-bg.jpg
+    - assets/images/water-droplet.png
+    - assets/images/spaceship.png
+    - assets/images/branding/title.png
+    - assets/images/ui/dialog-credits.png
+    - assets/images/ui/dialog-help.png
+    - assets/images/ui/icon-credits.png
+    - assets/images/ui/icon-help.png
+    - assets/images/ui/start-button.png
+    - assets/images/ui/icon-music-disabled.png
+    - assets/images/ui/icon-music-enabled.png
+    - assets/images/ui/icon-sound-disabled.png
+    - assets/images/ui/icon-sound-enabled.png
+    - assets/images/ui/trophee.png
+    - assets/images/ui/champion-cup.png
+    
+    - assets/audio/bgm/space_game.mp3
+    - assets/audio/sfx/pick.mp3
+    - assets/audio/sfx/death.mp3
+    - assets/audio/sfx/game-over.mp3
+    - assets/audio/sfx/waterdroplet.mp3
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
